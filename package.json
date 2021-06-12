@@ -1,0 +1,46 @@
+{
+  "name": "travel-app",
+  "version": "1.0.0",
+  "description": "Creating a Travel App as a capstone project for the Udacity FEND course in 2021",
+  "main": "index.js",
+  "dependencies": {
+    "babel-jest": "^26.6.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "font-awesome": "^4.7.0",
+    "html-loader": "^2.1.2",
+    "node": "^16.1.0",
+    "node-fetch": "^2.6.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "workbox-webpack-plugin": "^6.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.4",
+    "html-webpack-plugin": "^5.3.1",
+    "jest": "^26.6.3",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node src/server/index.js",
+    "build-prod": "webpack --config webpack.prod.js",
+    "build-dev": "webpack serve  --config webpack.dev.js --open"
+  },
+  "author": "Brendan Duffy",
+  "license": "ISC"
+}

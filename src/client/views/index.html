@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="assets/favicon.ico" rel="icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+        <title>Travel Planner</title>
+    </head>
+
+    <body class="main-page">
+        <header id="header-container">
+            <h1>Set Sail: Travel Planner</h1>
+            <img id="header-logo" src="assets/images/boat.png" alt="A toy sailboat">
+        </header>
+
+        <section id="side-container">
+            <div id="description" class="small-card">
+                <h1><strong>Planning a trip?</strong></h1>
+                <p>Enter your upcoming travel destinations to receive a weather report for each of your departure dates.</p>
+            </div>
+            <div id="form-card" class="small-card">
+                <form id="input-form">
+                    <label for="city">Location</label>
+                    <input id="city" name="city" placeholder="City name" required/>
+                    <label for="date-start">Departure date</label>
+                    <input id="date-start" name="date-start" type="date" required/>
+                    <label for ="date-end">Return date</label>
+                    <input id="date-end" name="date-end" type="date" required/>
+                    <input id="submit-button" type="submit" value="Add trip" form="input-form"/>
+                </form>
+            </div>
+        </section>
+        <section id="body-container">
+            <div id="list-placeholder">
+                <h1>No trips planned!</h1>               
+                <p>&nbspAdd travel information on the left.</p>
+            </div>
+        </section>
+
+        <footer>
+            Made with care by Brendan Duffy, 2021
+        </footer>
+    </body>
+</html>
