@@ -1,5 +1,3 @@
-import {resetUI} from '../js/resetUI'
-
 const bodyContainer = document.getElementById('body-container');
 const emptyList = document.getElementById('list-placeholder');
 
@@ -50,7 +48,6 @@ const addTripInfo = (res) => {
         //Add remove trip button functionality to each card
         removeTrip.addEventListener("click", () => {
             tripCard.remove();
-            resetUI();
           });
 
     } else if (document.contains(emptyList) == false) {
@@ -95,11 +92,9 @@ const addTripInfo = (res) => {
 
         removeTrip.addEventListener("click", () => {
             tripCard.remove();
-            resetUI();
                 }
           );
     }
 };
 
 export {addTripInfo}
-export {resetUI}

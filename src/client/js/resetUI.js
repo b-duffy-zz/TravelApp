@@ -1,12 +1,15 @@
 const bodyContainer = document.getElementById('body-container');
-const bodyCard = document.querySelector('.body-card')
 const emptyList = document.getElementById('list-placeholder');
 
-//If there are no more cards, restore default text to body container
-const resetUI = () => {
-    if (bodyContainer.contains(bodyCard) == false) {
+function resetUI() {
+    const bodyCard = document.querySelector('.body-card')
+    if (!bodyContainer.contains(bodyCard)) {
         emptyList.style.display = "inline";
-        } 
-    };
+        }
+}
+
+
+//If there are no more cards, restore default text to body container
+bodyContainer.addEventListener('click', resetUI);
 
 export {resetUI}

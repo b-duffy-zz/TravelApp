@@ -48,9 +48,8 @@ module.exports = {
                     filename: "./index.html",
                     favicon: "./src/client/styles/assets/favicon.ico"
                 }),
-                new MiniCssExtractPlugin({filename: '[name].css'})
-                
-                //new WorkboxPlugin.GenerateSW()
+                new MiniCssExtractPlugin({filename: '[name].css'}),
+                new WorkboxPlugin.GenerateSW()
             ],
             output:{
                 libraryTarget: 'var',
