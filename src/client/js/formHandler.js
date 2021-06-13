@@ -11,7 +11,7 @@ const processCity = (event) => {
     if ((city === "") || (startDate === "") || (endDate === "")) {
         alert("Please enter city, departure date, and return date!")
     } else {
-    fetch('http://localhost:8080/add', {
+    fetch('https://guarded-ridge-29807.herokuapp.com//add', {
            method: 'POST',
            credentials: 'same-origin',
            headers: { 'Content-Type': 'application/json' },
@@ -29,6 +29,6 @@ const processCity = (event) => {
 document.addEventListener('DOMContentLoaded', () => {
     const submit = document.getElementById("submit-button");
     submit.addEventListener("click", processCity);
-})
+}
 
 export {processCity}
