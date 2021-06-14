@@ -6,6 +6,8 @@ This project was completed as a part of Udacity's Front End Web Developer course
 ## Functionality
 This app allows a user to log a record of upcoming travel, with a picture of the destination and a temperature forecast at the travel location for the date of their departure.
 
+## Ways to stand out
+For this project, I added a "remove" option to the body cards. 
 
 ### Key components
 - Webserver - Node

@@ -10,6 +10,8 @@ function resetUI() {
 
 
 //If there are no more cards, restore default text to body container
-bodyContainer.addEventListener('click', resetUI);
+document.addEventListener('DOMContentLoaded', () =>{
+    bodyContainer.addEventListener('click', resetUI);
+});
 
 export {resetUI}
